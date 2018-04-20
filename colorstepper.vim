@@ -36,13 +36,13 @@ function! PrintColorscheme()
 endfunction
 
 if !hasmapto('<Plug>ColorstepPrev')
-    nmap <unique> <F6> <Plug>ColorstepPrev
+    nmap <unique> <S-F6> <Plug>ColorstepPrev
 endif
 if !hasmapto('<Plug>ColorstepNext')
-    nmap <unique> <F7> <Plug>ColorstepNext
+    nmap <unique> <S-F7> <Plug>ColorstepNext
 endif
 if !hasmapto('<Plug>ColorstepReload')
-    nmap <unique> <S-F7> <Plug>ColorstepReload
+    nmap <unique> <S-F8> <Plug>ColorstepReload
 endif
 
 nmap <unique> <Plug>ColorstepNext :call StepColorNext()<CR>
